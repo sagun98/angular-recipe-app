@@ -1,16 +1,18 @@
-import { Component } from '@angular/core';
-import { Recipe } from './model/recipe';
+import { Component } from "@angular/core";
+import { Recipe } from "./model/recipe";
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: "app-root",
+  templateUrl: "./app.component.html",
+  styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  recipe: Recipe;
+  recipes: Recipe[];
 
   constructor() {
-    this.recipe = new Recipe('Honana Bread' , 'This is a banana bread', null, null, null);
+    this.recipes = [
+      new Recipe("Honana Bread", "This is a banana bread", null, null, null),
+      new Recipe("Bhat and daal", "Authentic food of nepal", null, null, null)
+    ];
   }
-
 }
