@@ -11,7 +11,13 @@ export class AppComponent {
 
   constructor() {
     this.recipes = [
-      new Recipe("Honana Bread", "This is a banana bread", null, null, null),
+      new Recipe(
+        "Honana Bread",
+        "This is a banana bread. Just a filler text. Just a filler textJust a filler text Just a filler text. Just a filler textJust a filler text",
+        null,
+        null,
+        null
+      ),
       new Recipe("Bhat and daal", "Authentic food of nepal", null, null, null)
     ];
   }

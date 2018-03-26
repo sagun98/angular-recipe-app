@@ -1,4 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    margin: 4em 4em;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 160%;
+}
+
+div.cover-photo-holder img {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+.recipe {
+  float: left;
+  width: 97%;
+  margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+  div {
+    zoom: 1.1;
+  }
 }
