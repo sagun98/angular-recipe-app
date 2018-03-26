@@ -15,7 +15,8 @@ export class Recipe {
     public instructions: Instruction[];
     public cover_photo: string;
 
-    constructor(t: string, d: string, ing: Ingredient[], ins: Instruction[], cov: string) {
+    constructor(t: string, d: string,
+         ing: Ingredient[], ins: Instruction[], cov: string) {
         this.title = t ;
         this.description = d; 
         this.ingredients = ing; 
